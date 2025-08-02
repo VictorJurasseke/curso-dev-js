@@ -28,3 +28,6 @@ if (nota >= 6) {
 }
 
 Esses fundamentos são a base para começar a programar em JavaScript e criar lógicas simples para aplicações web.
+
+
+Victor Lucas Jurasseke Sales
