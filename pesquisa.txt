@@ -1,0 +1,30 @@
+Introdução à linguagem JavaScript: Conceitos Fundamentais
+
+JavaScript é uma linguagem de programação amplamente utilizada no desenvolvimento web, sendo essencial para criar páginas interativas e dinâmicas. Entre os primeiros conceitos que estão a declaração de variáveis e constantes, os tipos de dados e as estruturas condicionais.
+
+1. Declaração de Variáveis e Constantes
+Em JavaScript, usamos let para declarar variáveis que podem ter seus valores alterados, e const para constantes, cujos valores não podem ser reatribuídos. Antigamente, também se utilizava var, mas seu uso é desencorajado devido ao comportamento menos previsível no escopo.
+
+
+let idade = 25;
+const nome = "Ana";
+
+2. Tipos de Dados
+Os principais tipos de dados em JavaScript incluem:
+String: textos, como "Olá"
+Number: números inteiros ou decimais, como 10 ou 3.14
+Boolean: valores lógicos, true ou false
+Array e Object também são muito utilizados, representando coleções e estruturas mais complexas de dados.
+
+3. Estruturas Condicionais
+As estruturas condicionais permitem que o programa tome decisões com base em condições. O if, else if e else são as formas mais comuns:
+
+let nota = 7;
+
+if (nota >= 6) {
+    console.log("Aprovado");
+} else {
+    console.log("Reprovado");
+}
+
+Esses fundamentos são a base para começar a programar em JavaScript e criar lógicas simples para aplicações web.
