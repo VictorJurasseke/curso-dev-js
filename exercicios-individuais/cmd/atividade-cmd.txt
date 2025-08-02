@@ -1,0 +1,28 @@
+
+Criação e configuração
+
+git init
+git config --global user.name "Victor Sales"
+git config --global user.email "vitorsaleskikao@gmail.com"
+
+Termino da criação da pasta, primeiro commit
+
+git add .
+git commit -m "Criação da pasta e sua estrutura: curso-dev-js"
+
+
+Criação da branch e atualização
+
+git branch melhorias-estruturadas
+git switch melhorias-estruturadas
+git add .
+git commit -m "Alteração no README.ME"
+
+Renomeia a branch.
+git branch -M main
+
+git merge melhorias-estrutura  
+
+git remote add origin https://github.com/VictorJurasseke/curso-dev-js.git
+
+git push origin main
