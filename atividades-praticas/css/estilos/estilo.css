@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    color: #fdfdfd;
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    color: coral;
+
+}
