@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+<body>
+
+    <div class="container shadow-lg rounded bg-light col-4 p-5  mt-5">
+        <div class="row p-3">
+
+            <h1 class="display-6 text-center mb-3">Formulário de Contato</h1>
+            <hr>
+            <form>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Nome</span>
+                    <input required type="text" class="form-control" placeholder="Username" aria-label="Username">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Email</span>
+                    <input required type="text" class="form-control" placeholder="Email" aria-label="Email">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Telefone</span>
+                    <input required type="tel" class="form-control" placeholder="(18) 99999-9999"
+                        aria-label="(18) 99999-9999">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Estado</span>
+                    <select required class="form-select">
+                        <option selected disabled>Selecione seu estado</option>
+                        <option value="1">SP</option>
+                        <option value="2">MG</option>
+                        <option value="3">AM</option>
+                    </select>
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Cidade</span>
+                    <select required class="form-select">
+                        <option selected disabled>Selecione sua cidade</option>
+                        <option value="1">Santo Anastácio</option>
+                        <option value="2">Ribeirão dos Indios</option>
+                        <option value="3">Presidente Prudente</option>
+                    </select>
+                </div>
+
+
+                <div class="col-12 d-flex justify-content-center">
+                    <input type="submit" class="btn btn-success col-8 p-2" value="Enviar">
+                </div>
+            </form>
+        </div>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
