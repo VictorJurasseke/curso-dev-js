@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de repetições</title>
+</head>
+
+<body>
+
+    <p>F12 para visualizar</p>
+
+
+
+
+    <script>
+
+
+        const nomes = ["Lucas", "Maria", "José", "Ana", "Paulo"]
+        const numeros = [10, 20, 30, 40, 50]
+        const alunos = [
+            { nome: "Lucas", nota: 9 },
+            { nome: "Maria", nota: 10 },
+            { nome: "Pedro", nota: 8.5 },
+
+        ]
+
+
+        // VAI ATÉ 10
+        // for (let i = 1; i <= 10; i++) {
+        //     console.log("Repetição de numero:", i)
+        // }
+
+
+        // for (let i = 0; i < nomes.length; i++) {
+        //     console.log(nomes[i])
+        // }
+
+
+        // let x = 0
+        // while (x < nomes.length) {
+        //     console.log(nomes[x])
+
+        //     x++
+        // }
+
+        // do {
+        //     console.log(x)
+        //     x++
+        // } while (x <= 10)
+
+
+        nomes.forEach((item) => console.log(item))
+
+        alunos.map((item) => console.log(item.nota))
+
+
+
+        const novoArray = numeros.map((item) => item * 2)
+        console.log(novoArray)
+
+    </script>
+
+
+</body>
+
+</html>
