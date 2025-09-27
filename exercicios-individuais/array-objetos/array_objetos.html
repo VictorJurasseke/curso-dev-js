@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array objetos</title>
+</head>
+
+<body>
+
+    <p>F12 para exibir</p>
+
+
+    <!-- 
+    
+Exercício1 [ ] - array: 
+Crie um array chamado playlist e adicione pelo menos 3 das suas músicas favoritas como strings.
+Exiba no console a primeira música da sua playlist.
+Adicione uma nova música no final da playlist.
+Remover a última música que você adicionou.
+Exiba no console o tamanho da sua playlist final.
+Exercício2  { } - objeto:
+Crie um objeto chamado filme para representar seu filme favorito. Ele deve ter as propriedades titulo, ano e diretor.
+Exiba no console a frase: "O filme [TÍTULO], dirigido por [DIRETOR], foi lançado em [ANO]."
+Adicione uma nova propriedade ao objeto chamada personagens, que será um array [] com o nome de pelo menos 3 personagens.
+Acesse e exiba no console o nome do primeiro personagem do seu novo array de personagens.
+Exiba o objeto filme completo no console. 
+-->
+
+
+    <script>
+
+        // EXERCICIO 1 - ARRAY
+
+        const playlist = ["Montagem Aroma", "Dia Delicia", "Acelerada"]
+        console.log(playlist[0])
+        playlist.push("LUNA BALA")
+
+        playlist.pop(playlist.length - 1)
+
+
+        console.log(playlist.length)
+
+
+        //EXERCICIO 2 - OBJETOS
+
+
+        const filmeFavorito = {
+            titulo: "MATRIX",
+            diretores: ["Lana Wachowski", "Lilly Wachowski"],
+            lancamento: "1999"
+        }
+
+        const { titulo, diretores, lancamento } = filmeFavorito
+
+        console.log(`O filme ${titulo}, dirigido por ${diretores[0]} e ${diretores[1]}, foi lançado em ${lancamento} `)
+
+        filmeFavorito.elenco = ["Thomas", "Morpheus", "Trinity"]
+
+
+        console.log(filmeFavorito.elenco[0])
+        console.log(filmeFavorito)
+
+    </script>
+</body>
+
+</html>

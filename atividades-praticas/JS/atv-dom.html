@@ -59,12 +59,17 @@
 
 
     <script>
+        let valorDolar = 5.30;
+
+
+
+
 
         // 1-- 
         document.querySelector("#btn-converter").addEventListener
             ("click", function () {
                 const valorReal = Number(document.querySelector("#valor-real").value)
-                const valorConvertido = valorReal / 5.30
+                const valorConvertido = valorReal / valorDolar
 
                 document.querySelector("#resultado").textContent = `R$ ${valorConvertido.toFixed(2)}`
             })
