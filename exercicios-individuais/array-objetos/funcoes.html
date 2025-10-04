@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+<body>
+
+
+    F12
+    <div class="d-flex container flex-wrap gap-1">
+        <h1 class="text-center w-100">Feriados de 2025</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Data</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Tipo</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- Dados do map -->
+            </tbody>
+        </table>
+    </div>
+    <script>
+
+        // Função nomeada sem parametros
+
+        function exercicio1() {
+            // Código...
+
+        }
+
+        function saudacao() {
+            console.log("Olá Mundo!")
+        }
+
+        saudacao()
+
+        // Função com parametro
+
+        function soma(n1, n2) {
+            return (n1 + n2)
+        }
+        console.log("Somando", soma(5, 10) + soma(20, 1))
+
+
+        // função anonima
+        const Subtrair = (n1, n2) => { return n1 - n2 }
+
+
+        console.log("Subtraindo", Subtrair(10, 5))
+
+        // Função anonima => arrow function
+
+        const multiplicar = (n1, n2) => n1 * n2
+
+        console.log("Multiplicando", 5, "x", 2, "=", multiplicar(5, 2))
+
+
+
+
+        // Exercicio1
+
+        const calcularArea = (largura, altura) => largura * altura
+
+
+        const ehPar = (numero) => (numero % 2) == 0 ? `O valor ${numero} é par, portanto ${numero % 2 == 0}` : `O valor ${numero} é impar, portanto ${numero % 2 == 0}`
+
+        console.log(ehPar(1))
+
+
+        const celsiusParaFahrenheit = (temperaturaCelsius) => {
+            const farenheint = (temperaturaCelsius * 9 / 5) + 32;
+            return farenheint
+        }
+
+
+        console.log(celsiusParaFahrenheit(12))
+
+
+        async function buscarDadosFeriados() {
+            const response = await fetch("https://brasilapi.com.br/api/feriados/v1/2025")
+            const dados = await response.json()
+            const container = document.querySelector("#tbody")
+            const Elementos = dados.map((item) =>
+
+                `
+                        <tr>
+                        <th scope="row">1</th>
+                        <td>${item.date}</td>
+                        <td>${item.name}</td>
+                        <td>${item.type}</td>
+                    </tr>`
+            ).join('')
+            container.innerHTML = Elementos
+        }
+        buscarDadosFeriados()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
