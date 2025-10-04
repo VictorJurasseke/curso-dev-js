@@ -60,6 +60,31 @@
         const novoArray = numeros.map((item) => item * 2)
         console.log(novoArray)
 
+
+        const alunosNovaNota = alunos.map(alunos => {
+            return {
+                nome: alunos.nome,
+                nota: alunos.nota * 0.9
+            }
+        })
+
+        console.log(alunosNovaNota)
+
+
+        const arrayNumeros = [1,2,3,4,5,6,7,8,9,10]
+        const numerosPares = arrayNumeros.filter(numero => numero % 2 === 0)
+
+
+        const alunosAprovados = alunosNovaNota.filter(aluno => aluno.nota >= 8)
+        console.log(alunosAprovados)
+
+        console.log(numerosPares)
+
+
+
+
+
+
     </script>
 
 
